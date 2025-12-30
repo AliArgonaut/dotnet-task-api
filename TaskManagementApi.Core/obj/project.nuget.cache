@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XmB33DgqmXc=",
+  "success": true,
+  "projectFilePath": "/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/TaskManagementApi.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/ali/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
