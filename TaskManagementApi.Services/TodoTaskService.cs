@@ -106,7 +106,7 @@ namespace TaskManagementApi.Services
                 CreatedAt = task.CreatedAt,
                 CompletedAt = task.CompletedAt,
                 Priority = task.Priority.ToString();
-            }
+            };
         }
     }
 }
