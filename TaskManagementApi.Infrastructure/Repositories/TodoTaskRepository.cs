@@ -15,7 +15,24 @@ namespace TaskManagementApi.Infrastructure.Repositories
         {
             return await _dbSet
                 .Where(t => t.IsCompleted)
-                .OrderByDescending(t => t.CoompletedAt)
+                .OrderByDescending(t => t.CompletedAt)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<TodoTask>> GetPendingTasksAsync()
+        {
+            return await _dbSet
+                .Where(t => !t.IsCompleted)
+                .OrderByDescending(t => t.Priority)
+                .ThenBy(t => t.CreatedAt)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<TodoTask>> GetTasksByPriorityAsync(Priority priority)
+        {
+            return await _dbSet
+                .Where(t => t.Priority == priority)
+                .OrderBy(t => t.CreatedAt)
                 .ToListAsync();
         }
 
