@@ -35,7 +35,5 @@ namespace TaskManagementApi.Infrastructure.Repositories
                 .OrderBy(t => t.CreatedAt)
                 .ToListAsync();
         }
-
-
     }
 }

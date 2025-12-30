@@ -15,7 +15,7 @@ namespace TaskManagementApi.Core.DTOs
     {
         public string Title {get; set;} = string.Empty;
         public string? Description {get; set;}
-        public string Priority {get; set;} = 'Med' //default medium 
+        public string Priority {get; set;} = "Med"; //default medium 
     }
 
     public class UpdateTodoTaskDto
