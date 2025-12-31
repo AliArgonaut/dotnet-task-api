@@ -1,0 +1,10 @@
+./TaskManagementApi.Api/taskmanagement.db
+./TaskManagementApi.Api/taskmanagement.db-shm
+./TaskManagementApi.Api/taskmanagement.db-wal
+
+*.db
+*.db-shm
+*.db-wal
+
+bin/
+obj/
