@@ -22,7 +22,7 @@ namespace TaskManagementApi.Services
         public async Task<TodoTaskDto?> GetTaskByIdAsync(int id)
         {
             var task = await _repository.GetByIdAsync(id);
-            return task != null ? MapToDto(Task) : null;
+            return task != null ? MapToDto(task) : null;
         }
 
         public async Task<TodoTaskDto> CreateTaskAsync(CreateTodoTaskDto createDto)
@@ -34,7 +34,7 @@ namespace TaskManagementApi.Services
                 IsCompleted = false,
                 CreatedAt = DateTime.UtcNow,
                 Priority = Enum.Parse<Priority>(createDto.Priority)
-            }
+            };
 
             var createdTask = await _repository.AddAsync(task);
             return MapToDto(createdTask);
@@ -89,6 +89,17 @@ namespace TaskManagementApi.Services
 
             await _repository.DeleteAsync(id);
         }
+        
+        public async Task<TodoTaskDto?> GetTaskById(int id)
+        {
+            var task = await _repository.GetByIdAsync(id);
+            if (task == null) 
+            {
+                return null;
+            }
+            return MapToDto(task);
+        }
+
 
         public async Task<IEnumerable<TodoTaskDto>> GetCompletedTasksAsync()
         {
@@ -99,7 +110,7 @@ namespace TaskManagementApi.Services
         public async Task<IEnumerable<TodoTaskDto>> GetPendingTasksAsync()
         {
             var allTasks = await _repository.GetPendingTasksAsync();
-            return tasks.Select(MapToDto);
+            return allTasks.Select(MapToDto);
         }
         private static TodoTaskDto MapToDto(TodoTask task)
         {
@@ -111,7 +122,7 @@ namespace TaskManagementApi.Services
                 IsCompleted = task.IsCompleted,
                 CreatedAt = task.CreatedAt,
                 CompletedAt = task.CompletedAt,
-                Priority = task.Priority.ToString();
+                Priority = task.Priority.ToString(),
             };
         }
     }

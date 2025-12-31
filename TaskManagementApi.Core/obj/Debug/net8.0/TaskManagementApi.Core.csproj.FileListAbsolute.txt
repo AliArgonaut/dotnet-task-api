@@ -1,0 +1,12 @@
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/bin/Debug/net8.0/TaskManagementApi.Core.deps.json
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/bin/Debug/net8.0/TaskManagementApi.Core.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/bin/Debug/net8.0/TaskManagementApi.Core.pdb
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.AssemblyInfoInputs.cache
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.AssemblyInfo.cs
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.csproj.CoreCompileInputs.cache
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.sourcelink.json
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/refint/TaskManagementApi.Core.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/TaskManagementApi.Core.pdb
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Core/obj/Debug/net8.0/ref/TaskManagementApi.Core.dll

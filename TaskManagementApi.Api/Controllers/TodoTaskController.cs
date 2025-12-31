@@ -14,7 +14,7 @@ namespace TaskManagementApi.Api.Controllers
         public TodoTaskController(ITodoTaskService taskService, ILogger<TodoTaskController> logger)
         {
             _taskService = taskService;
-            _logger = logger
+            _logger = logger;
         }
 
         ///<summary>
@@ -26,12 +26,12 @@ namespace TaskManagementApi.Api.Controllers
             try 
             {
                 var tasks = await _taskService.GetAllTasksAsync();
-                return Ok(tasks)
+                return Ok(tasks);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "error retrieving tasks");
-                return StatusCode(500, "an error occured when retrieving tasks")
+                return StatusCode(500, "an error occured when retrieving tasks");
             }
         }
 
@@ -46,9 +46,9 @@ namespace TaskManagementApi.Api.Controllers
                 var task = await _taskService.GetTaskByIdAsync(id);
                 if (task == null)
                 {
-                    return NotFound($"Task with id {id} not found")
+                    return NotFound($"Task with id {id} not found");
                 }
-                return Ok(task)
+                return Ok(task);
             }
             catch (Exception ex)
             {
@@ -66,12 +66,12 @@ namespace TaskManagementApi.Api.Controllers
             try
             {
                 var tasks = await _taskService.GetCompletedTasksAsync();
-                return Ok(tasks)
+                return Ok(tasks);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "error getting tasks by completed status")
-                return StatusCode(500, "an error occured when getting tasks by completed status")
+                _logger.LogError(ex, "error getting tasks by completed status");
+                return StatusCode(500, "an error occured when getting tasks by completed status");
             }
         }
 
@@ -84,12 +84,12 @@ namespace TaskManagementApi.Api.Controllers
             try
             {
                 var tasks = await _taskService.GetPendingTasksAsync();
-                return Ok(tasks)
+                return Ok(tasks);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "error getting pending tasks");
-                return StatusCode(500, "error getting pending tasks")
+                return StatusCode(500, "error getting pending tasks");
             }
         }
 
@@ -102,12 +102,12 @@ namespace TaskManagementApi.Api.Controllers
             try 
             {
                 var task = await _taskService.CreateTaskAsync(createDto);
-                return CreatedAtAction(nameof(GetTaskById), new {id = task.Id}, task)
+                return CreatedAtAction(nameof(GetTaskById), new {id = task.Id}, task);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "error creating new task");
-                return StatusCode(500, "Error creating new task')
+                return StatusCode(500, "Error creating new task");
             }
         }
 
@@ -126,7 +126,7 @@ namespace TaskManagementApi.Api.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "error updating task");
-                return StatusCode(500, "error updating task")
+                return StatusCode(500, "error updating task");
             }
         }
 
@@ -139,13 +139,17 @@ namespace TaskManagementApi.Api.Controllers
         {
             try 
             {
-                var task = await _taskService.DeleteTaskAsync(id);
-                return Ok(task)
+                await _taskService.DeleteTaskAsync(id);
+                return NoContent(); 
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "error deleting task");
-                return StatusCode(500, "error deleting task")
+                return StatusCode(500, "error deleting task");
             }
         }
     }

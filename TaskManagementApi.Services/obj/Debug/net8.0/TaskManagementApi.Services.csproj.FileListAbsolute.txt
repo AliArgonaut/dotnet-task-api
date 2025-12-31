@@ -1,0 +1,16 @@
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/bin/Debug/net8.0/TaskManagementApi.Services.deps.json
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/bin/Debug/net8.0/TaskManagementApi.Services.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/bin/Debug/net8.0/TaskManagementApi.Services.pdb
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/bin/Debug/net8.0/TaskManagementApi.Core.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/bin/Debug/net8.0/TaskManagementApi.Core.pdb
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.csproj.AssemblyReference.cache
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.AssemblyInfoInputs.cache
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.AssemblyInfo.cs
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.csproj.CoreCompileInputs.cache
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.sourcelink.json
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskMana.D4D3E818.Up2Date
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/refint/TaskManagementApi.Services.dll
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.pdb
+/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/ref/TaskManagementApi.Services.dll

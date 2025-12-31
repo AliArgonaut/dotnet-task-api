@@ -6,6 +6,6 @@ namespace TaskManagementApi.Core.Interfaces
     {
         Task<IEnumerable<TodoTask>> GetCompletedTasksAsync();
         Task<IEnumerable<TodoTask>> GetPendingTasksAsync();
-        Task<IEnumerable<TodoTask>> GetTasksByPriority(Priority priority);
+        Task<IEnumerable<TodoTask>> GetTasksByPriorityAsync(Priority priority);
     }
 }

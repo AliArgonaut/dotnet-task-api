@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TaskManagementApi.Core.Models;
-namespace TaskManagementApi.Infrastructure.Data;
+
+namespace TaskManagementApi.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -8,12 +9,12 @@ namespace TaskManagementApi.Infrastructure.Data;
         {
         }
 
-        public DbSet<TodoTask> TodoTask {get; set;}
+        public DbSet<TodoTask> TodoTasks {get; set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entiry<TodoTask>(entity => {
+            modelBuilder.Entity<TodoTask>(entity => {
                         entity.HasKey(e => e.Id);
                         entity.Property(e => e.Title).IsRequired().HasMaxLength(200);
                         entity.Property(e => e.Description).HasMaxLength(1000);
