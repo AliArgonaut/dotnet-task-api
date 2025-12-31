@@ -2,6 +2,8 @@
 
 This project is a task management API built with .NET 8.0. It provides full CRUD (Create, Read, Update, Delete) operations for managing to-do tasks. The API uses SQLite for data persistence and includes OpenAPI specifications for documentation, accessible via Swagger UI.
 
+
+
 ## Features
 
 *   **RESTful API:** Implements standard HTTP methods for task management.
@@ -20,6 +22,8 @@ This project is a task management API built with .NET 8.0. It provides full CRUD
 *   [Models](#models)
 *   [Contributing](#contributing)
 *   [License](#license)
+
+<img src="./Assets/swaggerui.png"/>
 
 ## Project Structure
 
