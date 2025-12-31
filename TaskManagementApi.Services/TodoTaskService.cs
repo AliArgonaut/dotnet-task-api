@@ -90,6 +90,12 @@ namespace TaskManagementApi.Services
             await _repository.DeleteAsync(id);
         }
 
+        public async Task<IEnumerable<TodoTaskDto>> GetCompletedTasksAsync()
+        {
+            var tasks = await _repository.GetCompletedTasksAsync();
+            return tasks.Select(MapToDto);
+        }
+
         public async Task<IEnumerable<TodoTaskDto>> GetPendingTasksAsync()
         {
             var allTasks = await _repository.GetPendingTasksAsync();

@@ -1,6 +1,0 @@
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.csproj.AssemblyReference.cache
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.GeneratedMSBuildEditorConfig.editorconfig
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.AssemblyInfoInputs.cache
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.AssemblyInfo.cs
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.csproj.CoreCompileInputs.cache
-/home/ali/Desktop/learning/TaskManagementApi/TaskManagementApi.Services/obj/Debug/net8.0/TaskManagementApi.Services.sourcelink.json
