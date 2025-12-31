@@ -20,8 +20,6 @@ This project is a task management API built with .NET 8.0. It provides full CRUD
 *   [Getting Started](#getting-started)
 *   [API Endpoints](#api-endpoints)
 *   [Models](#models)
-*   [Contributing](#contributing)
-*   [License](#license)
 
 <img src="./Assets/swaggerui.png"/>
 
@@ -97,10 +95,3 @@ Used for transferring to-do task data between layers.
 | `Description`   | `string` | A detailed description of the to-do task.   |
 | `IsCompleted`   | `bool` | A flag indicating whether the task is completed. |
 
-## Contributing
-
-Contributions are welcome! Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
